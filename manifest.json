@@ -1,10 +1,17 @@
 {
     "manifest_version": 3,
-    "name": "AI Helper",
-    "version": "1.0",
-    "description": "選択した文字列を生成AIに送信",
-    "action": {
-      "default_popup": "popup/popup.html"
+    "name": "Azure OpenAI Translator",
+    "version": "2.0",
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
     },
-    "permissions": ["activeTab", "scripting"]
-  }
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

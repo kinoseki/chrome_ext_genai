@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Translation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #original,
+        #translated {
+            margin: 10px;
+            border: 1px solid #000;
+            /* 枠線を追加（オプション） */
+            padding: 10px;
+            /* 内側の余白を追加（オプション） */
+            box-sizing: border-box;
+            display: inline-block;
+            /* パディングとボーダーを含めたサイズを指定 */
+            width: 600px;
+            /* 幅を固定 */
+
+            white-space: pre-wrap;
+            /* 改行を保持 */
+            word-wrap: break-word;
+            /* 長い単語を折り返す */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>original</div>
+    <div id="original"></div>
+    <div>translated</div>
+    <div id="translated"></div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
